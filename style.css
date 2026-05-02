@@ -29,6 +29,7 @@
 body { 
     font-family: "Inter", sans-serif; background-color: var(--background-main); color: var(--text-main); 
     line-height: 1.6; 
+    overflow-x: hidden;
 } 
 
 h1, h2, h3 { 
@@ -56,6 +57,7 @@ header {
     width: 100%;
     position: sticky;
     top: 0px;
+    padding: 10px 0px;
     margin-bottom: 0%;
     z-index: 1000;
     background: rgba(18, 20, 23, 0.85);
@@ -211,6 +213,8 @@ header {
 
 .btn-primary:hover {
     background: transparent;
+    border: 1px solid var(--gold);
+    transition: var(--transition);
 }
 
 .btn-secondary {
@@ -237,16 +241,21 @@ header {
     margin-bottom: 40px;
     margin-top: 40px;
     font-size: 32px;
-
 }
 
 .why-grid {
+    width: 100%;
+    min-width: 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .why-item {
+    width: 100%;
+    min-width: 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     background: var(--background-card);
     padding: 25px;
     text-align: center;
@@ -259,6 +268,18 @@ header {
     transform: translateY(-5px);
     background: var(--background-soft);
 }
+@media (max-width:900px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
 
 .about-short p {
     max-width: 700px;
@@ -287,13 +308,15 @@ header {
     margin-top: 10px;
 }
 
-.services-grid {
+.service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .service-card {
+    width: 100%;
+    min-width: 0px;
     background: var(--background-card);
     padding: 30px;
     border-radius: var(--radius);
@@ -301,8 +324,17 @@ header {
 }
 
 .service-card h3 {
+    min-width: 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     margin-bottom: 15px;
     color: var(--gold);
+}
+
+.service-card p {
+    min-width: 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .service-card:hover {
@@ -310,9 +342,21 @@ header {
     transform: translateY(-5px);
 }
 
-.services-cta {
+.service-cta {
     text-align: center;
     margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .quote-1 {
