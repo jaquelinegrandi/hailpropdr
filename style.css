@@ -53,6 +53,15 @@ a {
     margin: 0px auto;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#stats {
+    padding-top: 0vh;
+}
+
 header {
     width: 100%;
     position: sticky;
@@ -232,10 +241,6 @@ header {
     color: var(--background-main);
 }
 
-.section {
-    padding: 80px 0px;
-}
-
 .section-title {
     text-align: center;
     margin-bottom: 40px;
@@ -286,6 +291,7 @@ header {
     margin: 0px auto;
     text-align: center;
 }
+
 
 
 .stats-grid {
