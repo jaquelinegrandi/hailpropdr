@@ -265,7 +265,7 @@ section#image::before {
     position: absolute;
     inset: 0;
 
-    
+    background-image: url(images/maylonejobk.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
