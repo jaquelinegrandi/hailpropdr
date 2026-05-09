@@ -182,6 +182,12 @@ header {
     text-align: center;
 
     background: linear-gradient(rgba(18,20,23,0.85)), rgba(18, 20, 23, 0.95) url('images/background.png') center/cover no-repeat; 
+
+    box-shadow: inset 1px 1px 10px 0px black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero h1 {
@@ -251,6 +257,7 @@ section#stats {
 section#image {
     position: relative;
     overflow: hidden;
+    min-width: 100hv
 }
 
 section#image::before {
@@ -258,13 +265,13 @@ section#image::before {
     position: absolute;
     inset: 0;
 
-    background-image: url(images/maylonejo2.jpg);
+    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 
-    filter: blur(2px);
+    filter: blur(2px) grayscale(100%);
 
     box-shadow: inset 6px 6px 13px 0px black;
 
@@ -275,6 +282,35 @@ section#image > * {
     position: relative;
     z-index: 1;
 }
+
+.about-short p {
+    max-width: 700px;
+    margin: 0px auto;
+    text-align: center;
+    color: var(--text-soft);
+}
+
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 40px;
+    color: var(--gold);
+    margin-top: 35px;
+}
+
+.stat p {
+    margin-top: 10px;
+}
+
 
 .why-grid {
     width: 100%;
@@ -313,34 +349,6 @@ section#image > * {
     }
 }
  
-
-.about-short p {
-    max-width: 700px;
-    margin: 0px auto;
-    text-align: center;
-    color: var(--text-main);
-}
-
-
-.stats-grid {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-}
-
-.stats {
-    text-align: center;
-}
-
-.stat h3 {
-    font-size: 40px;
-    color: var(--gold);
-    margin-top: 35px;
-}
-
-.stat p {
-    margin-top: 10px;
-}
 
 .service-grid {
     display: grid;
