@@ -70,8 +70,20 @@ header {
 }
 
 .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 12px
+}
+.logo img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+}
+
+.logo h1 {
     font-size: 25px;
     color: var(--gold);
+    margin-top: 35px;
 }
 
 .nav.bar {
