@@ -2,9 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap'); 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root { 
-    --background-main: #121417; --background-soft: #1a1d21; --background-card: #20242a; 
+
+    /*COLORS*/
+
+    --background-main: #121417; 
+    --background-soft: #1a1d21; 
+    --background-card: #20242a;
     
     --gold: #c6a46c; 
     --gold-soft: #a88b5c; 
@@ -15,9 +22,53 @@
     
     --text-main: #f5f5f5; 
     --text-soft: #b0b3b8; 
+
+    --border-light: rgba(255, 255, 255, 0.08);
+    --border-soft: rgba(255,255,255,0.04);
+
+    --overlay-dark: rgba(0,0,0,0.72);
+    --overlay-light: rgba(0,0,0,0.3);
+
+    /*TYPOGRAPHY*/
+
+    --font-title: "Cinzel", serif;
+    --font-body: "Inter", sans-serif;
+
+    --title-big: 5.5rem;
+    --title-medium: 3rem;
+    --title-small: 1.5rem;
+
+    --text-large: 1.15rem;
+    --text-normal: 1rem;
+    --text-small: 0.09rem;
+
+    --letter-spacing-title: 2px;
+    --container-width: 1400px;
+
+    --card-padding: 2.5rem;
+
+    --buttom-padding: 1rem 2.2rem;
+
+    /*EFFECTS*/
     
-    --radius: 10px; 
-    --transition: 0.3s ease;
+    --radius: 14px;
+    --radius-small: 8px;
+    --radius-large: 24px;
+
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.25);
+    --shadow-medium: rgba(0,0,0,0.35);
+    --shadow-heavy: rgba(0,0,0,0.45);
+
+    --blur-light: blur(8px);
+    --blur-medium: blur(14px);
+    --blur-heavy: blur(24px);
+
+    --transition-slow: 1s ease;
+    --transition-medium: 0.6s ease;
+    --transition-fast: 0.3s ease;
+
+    --luxury-transition: cubic-bezier(0.19,1,0.22,1);
+    
 } 
 
 * { 
@@ -25,6 +76,11 @@
     padding: 0px; 
     box-sizing: border-box; 
 } 
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body { 
     font-family: "Inter", sans-serif; background-color: var(--background-main); color: var(--text-main); 
