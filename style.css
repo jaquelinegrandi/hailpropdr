@@ -3024,6 +3024,249 @@ header {
     z-index: 3;
 }
 
+/*SERVICES*/
+
+.services-hero {
+    position: relative;
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.55)
+    ),
+    url('images/serviceshero2.png');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.services-hero::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 100%;
+}
+
+.services-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.services-hero h1 {
+    font-size: 5.5rem;
+    color: var(--text-main);
+
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.services-heroh1 {
+    font-size: 5.5rem;
+    color: var(--gold);
+
+    line-height: 0.8;
+    margin-bottom: 3rem;
+}
+
+.services-hero p {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/*SERVICES CARDS*/
+
+/*DEGRADADO AQUI v*/
+.services-main {
+    position: relative;
+
+    background: var(--warm-white);
+
+    padding: 4.5rem 0;
+
+    border-top: var(--beige-border);
+    border-bottom: var(--beige-border);
+}
+
+.services-main::after {
+    content: "";
+
+    position: absolute;
+    top: -90px;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(245,241,234,0) 0%,
+        rgba(245,241,234,0.30) 40%,
+        var(--beige-main
+        ) 75%,  
+        var(--beige-main) 100%  
+    );
+
+    pointer-events: none;
+}
+
+/*DEGRADADO AQUI ^*/
+
+.service-grid-service {
+    width: 90%;
+    max-width: 1280px;
+    background: var(--beige-main);
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+}
+
+.service-card-service {
+    position: relative;
+    overflow: hidden;
+
+    min-width: 0;
+    min-height: 500px;
+    padding: 5rem 2rem 2rem;
+    border-radius: var(--radius);
+
+    border: 1px solid var(--text-brown);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    transition: 0.7s ease;
+
+    background-size: 108%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.service-card-service::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.03) 0%,
+        rgba(0,0,0,0.12) 30%,
+        rgba(245,241,234,0.50) 52%,
+        rgba(245,241,234,0.96) 74%,
+        rgba(245,241,234,1) 100%
+    );
+
+    z-index: 1;
+}
+
+.service-card-service > * {
+    position: relative;
+    z-index: 2;
+}
+
+.service-card-service:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.4),
+    0 0 25px rgba(198,164,108,0.15);
+}
+
+.service-card-service:nth-child(1) {
+    background-image: url('images/whatispdr-about.png');
+    background-position: center 0%;
+}
+
+.service-card-service:nth-child(2) {
+    background-image: url('images/grid-2.png');
+    background-position: center -59px;
+    
+}
+
+.service-card-service:nth-child(3) {
+    background-image: url('images/grid-3-bk.png');
+    background-position: center -40px;
+    background-size: 100%;
+}
+
+.service-card-service h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--gold);
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow-wrap: anywhere;
+
+}
+
+.service-card-service p {
+    color: var(--text-dark);
+    line-height: 1.9;
+    font-size: 1rem;
+
+    max-width: 280px;
+    margin: auto;
+}
+
+.service-card-service img {
+    width: 50px;
+    height: -50px;
+    top: 20px;
+    left: 0%;
+
+    display: flex;
+
+    object-fit: contain;
+
+
+    padding: 10px;
+
+    border-radius: 42%;
+
+    box-sizing: content-box;
+    margin: 0 auto;
+
+    background: rgba(0,0,0, 0.45);
+    backdrop-filter: blur(5px);
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
 /*FOOTER*/
 
 .footer {
