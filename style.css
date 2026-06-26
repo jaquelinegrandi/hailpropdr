@@ -3786,7 +3786,7 @@ header {
 .footer {
     background: #050505;
     border-top: var(--gold-border);
-    padding: 4rem;
+    padding: 3rem 0 1rem;
 }
 
 .footer-content {
