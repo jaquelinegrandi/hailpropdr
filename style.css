@@ -2855,14 +2855,14 @@ header {
 
 .philosophy-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
     gap: 2rem;
 }
 
 .philosophy-item {
     background: var(--beige-main);
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
 
     border: 1px solid rgba(198,164,108,0.25);
     transition: var(--transition-medium);
