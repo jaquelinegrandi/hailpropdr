@@ -4575,7 +4575,7 @@ header {
         opacity: 0;
         visibility: hidden;
 
-        z-index: 1100;
+        z-index: 2100;
     }
 
     .dropdown.active .dropdown-menu {
