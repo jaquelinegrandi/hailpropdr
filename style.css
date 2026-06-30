@@ -3884,6 +3884,896 @@ header {
     font-size: 0.85rem;
 }
 
+.menu-toggle,
+.close-menu{
+    display:none;
+}
 
 
 /*RESPONSIVE NON-DESKTOP*/
+
+
+@media (max-width: 1200px) {
+
+    /* CONTAINER */
+
+    .container{
+        width:92%;
+    }
+
+    /* HERO */
+
+    .hero-content h1,
+    .page-hero h1,
+    .page-hero-pdr h1,
+    .experience-hero h1,
+    .culture-hero h1,
+    .services-hero h1,
+    .team-hero h1{
+        font-size:4.8rem;
+    }
+
+    .hero-content h2,
+    .page-hero h2,
+    .page-hero-pdr h2,
+    .experience-hero h2,
+    .culture-hero h2,
+    .services-heroh1,
+    .team-heroh1,
+    .contact-hero h2{
+        font-size:4.8rem;
+    }
+
+    .hero-content p,
+    .page-hero p,
+    .page-hero-pdr p,
+    .experience-hero p,
+    .culture-hero p,
+    .services-hero p,
+    .team-hero p,
+    .contact-hero p{
+        max-width:680px;
+        font-size:1.08rem;
+    }
+
+    /* HOME */
+
+    .about-content{
+        gap:4rem;
+    }
+
+    .about-image{
+        width:420px;
+    }
+
+    .service-grid{
+        gap:1.5rem;
+    }
+
+    .service-card{
+        min-height:400px;
+        padding:2.5rem 1.6rem;
+    }
+
+    /* ABOUT */
+
+    .about-grid{
+        width:95%;
+        gap:1.5rem;
+    }
+
+    .about-card{
+        min-height:470px;
+    }
+
+    /* PDR */
+
+    .pdr-grid{
+        gap:3rem;
+    }
+
+    .pdr-image{
+        min-height:430px;
+    }
+
+    /* EXPERIENCE */
+
+    .countries-grid{
+        gap:1.4rem;
+    }
+
+    /* CULTURE */
+
+    .verse-grid{
+        gap:3rem;
+    }
+
+    /* SERVICES PAGE */
+
+    .service-grid-service{
+        width:95%;
+        gap:1.5rem;
+    }
+
+    .service-card-service{
+        min-height:470px;
+    }
+
+    /* TEAM */
+
+    .team-member-left,
+    .team-member-right{
+        gap:50px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid{
+        grid-template-columns:38% 30% 24%;
+        gap:2.5rem;
+    }
+
+    /* FOOTER */
+
+    .footer-content{
+        gap:2rem;
+    }
+
+}
+
+/*TABLET 998px*/
+
+@media (max-width:992px){
+
+    /* CONTAINER */
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        overflow:hidden;
+    }
+
+    /* HERO */
+
+    .hero,
+    .page-hero,
+    .page-hero-pdr,
+    .services-hero,
+    .experience-hero,
+    .culture-hero,
+    .team-hero,
+    .contact-hero{
+        min-height:65vh;
+        background-attachment:scroll;
+    }
+
+    .hero-content h1,
+    .page-hero h1,
+    .page-hero-pdr h1,
+    .experience-hero h1,
+    .culture-hero h1,
+    .services-hero h1,
+    .team-hero h1{
+        font-size:4rem;
+    }
+
+    .hero-content h2,
+    .page-hero h2,
+    .page-hero-pdr h2,
+    .experience-hero h2,
+    .culture-hero h2,
+    .services-heroh1,
+    .team-heroh1,
+    .contact-hero h2{
+        font-size:4rem;
+        line-height:1;
+    }
+
+    .hero-content p,
+    .page-hero p,
+    .page-hero-pdr p,
+    .experience-hero p,
+    .culture-hero p,
+    .services-hero p,
+    .team-hero p,
+    .contact-hero p{
+        font-size:1.05rem;
+        max-width:620px;
+    }
+
+    /* SECTION TITLES */
+
+    .section-title{
+        font-size:2.1rem !important;
+    }
+
+    /* HOME */
+
+    .about-content{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:3rem;
+    }
+
+    .about-image{
+        width:100%;
+        max-width:520px;
+        margin:auto;
+    }
+
+    .stats{
+        justify-content:center;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .quote-1 .container{
+        justify-content:center;
+    }
+
+    .quote-1-content{
+        text-align:center;
+        justify-content:center;
+    }
+
+    .quote-1 h2{
+        text-align:center;
+        font-size:1.8rem;
+    }
+
+    .contact-cta-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .location .container{
+        grid-template-columns:1fr;
+    }
+
+    .location-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    /* ABOUT */
+
+    .about-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* PDR */
+
+    .pdr-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pdr-image{
+        order:-1;
+        min-height:420px;
+    }
+
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* BEFORE / AFTER */
+
+    .before-after-grid{
+        grid-template-columns:1fr;
+        max-width:600px;
+    }
+
+    /* EXPERIENCE */
+
+    .countries-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .quote-3 .container{
+        justify-content:center;
+    }
+
+    .quote-3-content{
+        width:100%;
+        min-width:0;
+    }
+
+    .quote-3 h2{
+        text-align:center;
+    }
+
+    .quote-3-line{
+        transform:none;
+        margin-inline:auto;
+    }
+
+    /* CULTURE */
+
+    .verse-grid{
+        grid-template-columns:1fr;
+    }
+
+    .verse-grid::after{
+        display:none;
+    }
+
+    .mindset-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .philosophy-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* SERVICES PAGE */
+
+    .service-grid-service{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+        gap:3rem;
+    }
+
+    .step:not(:last-child)::after{
+        display:none;
+    }
+
+    /* TEAM */
+
+    .team-member-left,
+    .team-member-right{
+        grid-template-columns:1fr;
+        gap:2.5rem;
+        padding:60px 0;
+    }
+
+    .team-member-right .team-info{
+        order:2;
+    }
+
+    .team-member-right div:first-child{
+        order:1;
+    }
+
+    .team-maylon img,
+    .team-jo img,
+    .team-ve img{
+        width:100%;
+        margin:0;
+    }
+
+    /* CONTACT */
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:4rem;
+    }
+
+    .contact-info,
+    .contact-info-page{
+        border:none;
+        padding:0;
+    }
+
+    .contact-map iframe{
+        height:350px;
+    }
+
+    /* FOOTER */
+
+    .footer-content{
+        grid-template-columns:repeat(2,1fr);
+        gap:3rem;
+    }
+
+    .footer-content > div::after{
+        display:none;
+    }
+
+}
+
+/*MOVIL GRANDE*/
+
+@media (max-width: 767px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:4rem 0;
+    }
+
+    /* HERO */
+
+    .hero,
+    .page-hero,
+    .page-hero-pdr,
+    .experience-hero,
+    .culture-hero,
+    .services-hero,
+    .team-hero,
+    .contact-hero{
+        min-height:65vh;
+        background-attachment:scroll;
+    }
+
+    .hero h1,
+    .page-hero h1,
+    .page-hero-pdr h1,
+    .experience-hero h1,
+    .culture-hero h1,
+    .services-hero h1,
+    .team-hero h1{
+        font-size:3.2rem;
+        line-height:1.1;
+    }
+
+    .hero h2,
+    .page-hero h2,
+    .page-hero-pdr h2,
+    .experience-hero h2,
+    .culture-hero h2,
+    .services-heroh1,
+    .team-heroh1,
+    .contact-heroh2{
+        font-size:2.8rem;
+        line-height:1;
+        margin-bottom:2rem;
+    }
+
+    .hero p,
+    .page-hero p,
+    .page-hero-pdr p,
+    .experience-hero p,
+    .contact-hero p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    /* TITULOS */
+
+    .section-title{
+        font-size:2rem !important;
+    }
+
+    /* HOME */
+
+    .service-grid,
+    .stats,
+    .countries-grid,
+    .benefits-grid,
+    .service-grid-service,
+    .about-grid,
+    .process-grid,
+    .mindset-grid,
+    .philosophy-grid,
+    .before-after-grid,
+    .verse-grid{
+        grid-template-columns:1fr;
+    }
+
+    .verse-grid::after{
+        display:none;
+    }
+
+    .location .container,
+    .pdr-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* TEAM */
+
+    .team-member-left,
+    .team-member-right{
+        grid-template-columns:1fr;
+        gap:2.5rem;
+        padding:3rem 0;
+    }
+
+    .team-jo img,
+    .team-maylon img,
+    .team-ve img{
+        width:100%;
+        height:420px;
+        margin:0;
+    }
+
+    /* FOOTER */
+
+    .footer-content{
+        grid-template-columns:1fr;
+        gap:2.5rem;
+    }
+
+    .footer-content > div::after{
+        display:none;
+    }
+
+    /* CTA */
+
+    .contact-cta-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contact-cta .btn-primary,
+    .service-cta .btn-primary,
+    .experience-contact,
+    .pdr-contact{
+        width:100%;
+        max-width:340px;
+    }
+
+}
+
+/*MOVIL PEQUEÑO*/
+
+    @media (max-width:575px){
+
+        .menu-toggle {
+            display: block;
+
+            background: none;
+            border: none;
+
+            color: var(--gold);
+
+            font-size: 2rem;
+
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .close-menu {
+            display: block;
+
+            background: none;
+            border: none;
+
+            color: var(--gold);
+
+            font-size: 1.6rem;
+
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+
+        .nav-menu {
+            position: fixed;
+
+            top: 0;
+            right: 0;
+
+            width: 280px;
+            height: 100vh;
+
+            padding: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            gap: 1.5rem;
+
+            list-style: none;
+
+            background: #050505;
+            border-left: 1px solid rgba(198,164,108,0.25);
+            box-shadow: -10px 0 35px rgba(0,0,0,0.55);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition:
+            transform .45s ease,
+            opacity .35 ease,
+            visibility .35s ease;
+
+            z-index: 1000;
+        }
+
+        .nav-menu.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+.nav-menu.visible, 
+.close-menu { 
+    display:block; 
+}
+.nav-menu li {
+    width: 100%;
+}
+
+        .nav-menu a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: .8rem 1;
+
+            color: var(--text-main);
+            font-size: 1rem;
+
+            border-bottom: 1px solid rgba(198,164,108,.12);
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold);
+        }
+
+        .dropdown {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: transparent;
+
+            border: none;
+
+            box-shadow: none;
+        }
+
+        .dropdown > a {
+            flex: 1;
+        }
+
+    .dropdown-toggle {
+        background: none;
+        border: none;
+
+        color: var(--gold);
+        cursor: pointer;
+
+        padding: 0;
+    }
+        
+    .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        background: #050505;
+        list-style: none;
+        transform:translateX(100%);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition:.35s ease;
+
+        z-index:5;
+    }
+
+    .dropdown.active,
+    .dropdown-menu {
+
+    transform:translateX(0);
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+.dropdown-back {
+
+    margin-bottom: 1rem;
+}
+
+.dropdown-back button {
+
+    display: flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    background:none;
+
+    border:none;
+
+    color:var(--gold);
+
+    cursor:pointer;
+
+    font-size:1rem;
+}
+
+.dropdown-menu a{
+
+    color:var(--text-main);
+
+    padding:1rem 0;
+
+    border-bottom:1px solid rgba(198,164,108,.12);
+}
+
+    .navbar h1 {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    section{
+        padding:3.5rem 0;
+    }
+
+    /* HERO */
+
+    .hero,
+    .page-hero,
+    .page-hero-pdr,
+    .experience-hero,
+    .culture-hero,
+    .services-hero,
+    .team-hero,
+    .contact-hero{
+        min-height:60vh;
+    }
+
+    .hero h1,
+    .page-hero h1,
+    .page-hero-pdr h1,
+    .experience-hero h1,
+    .culture-hero h1,
+    .services-hero h1,
+    .team-hero h1{
+        font-size:2.4rem;
+        line-height:1.15;
+    }
+
+    .hero h2,
+    .page-hero h2,
+    .page-hero-pdr h2,
+    .experience-hero h2,
+    .culture-hero h2,
+    .services-heroh1,
+    .team-heroh1,
+    .contact-heroh2{
+        font-size:2rem;
+        line-height:1.1;
+        margin-bottom:1.5rem;
+    }
+
+    .hero p,
+    .page-hero p,
+    .page-hero-pdr p,
+    .experience-hero p,
+    .contact-hero p{
+        font-size:0.95rem;
+        line-height:1.7;
+    }
+
+    /* TITULOS */
+
+    .section-title{
+        font-size:1.8rem !important;
+        margin-bottom:2.5rem !important;
+    }
+
+    /* TARJETAS */
+
+    .service-card,
+    .benefit,
+    .about-card,
+    .service-card-service,
+    .mindset-item,
+    .philosophy-item,
+    .country-card{
+        padding:2rem 1.5rem;
+        min-height:auto;
+    }
+
+    .service-card h3,
+    .benefit h3,
+    .about-card h3,
+    .service-card-service h2{
+        font-size:1.4rem;
+    }
+
+    .service-card p,
+    .benefit p,
+    .about-card p,
+    .service-card-service p,
+    .mindset-item p,
+    .philosophy-item p{
+        font-size:0.95rem;
+    }
+
+    /* BOTONES */
+
+    .btn-primary,
+    .experience-contact,
+    .pdr-contact{
+        width:100%;
+        padding:1rem;
+        font-size:.8rem;
+    }
+
+    /* QUOTES */
+
+    .quote-1 h2,
+    .quote-3 h2,
+    .about-statement h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+
+    .quote-1-content,
+    .quote-3-content,
+    .about-statement-content{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+    .quote-3-content{
+        width:100%;
+        min-width:0;
+    }
+
+    .quote-3-line{
+        transform:none;
+        margin:2rem auto 0;
+    }
+
+    /* IMÁGENES EQUIPO */
+
+    .team-maylon img,
+    .team-jo img,
+    .team-ve img{
+        height:320px;
+    }
+
+    /* MAPAS */
+
+    .map-placeholder{
+        min-height:220px;
+    }
+
+    .contact-map iframe{
+        height:300px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-links,
+    .footer-contact{
+        align-items:center;
+    }
+
+    .footer-instagram{
+        justify-content:center;
+    }
+
+    /* ESTADÍSTICAS */
+
+    .stat h3{
+        font-size:2.2rem;
+    }
+
+    .stat p{
+        max-width:none;
+        font-size:.75rem;
+    }
+
+}
