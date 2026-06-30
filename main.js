@@ -39,13 +39,16 @@ if (aboutToggle && aboutBack && aboutDropdown) {
 
     aboutToggle.addEventListener("click", (e) => {
         e.preventDefault();
+        e.stopPropagation();
+
         aboutDropdown.classList.add("active");
     });
 
-    aboutBack.addEventListener("click", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+    aboutBack.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
 
-    aboutDropdown.classList.remove("active");
-});
-};
+        aboutDropdown.classList.remove("active");
+    });
+
+}
