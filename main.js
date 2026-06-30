@@ -46,7 +46,8 @@ if (aboutToggle && aboutBack && aboutDropdown) {
     e.preventDefault();
     e.stopPropagation();
 
-    alert("BACK");
+    aboutDropdown.classList.remove("active");
+});
 
     aboutDropdown.classList.remove("active");
 });
