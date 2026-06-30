@@ -48,8 +48,4 @@ if (aboutToggle && aboutBack && aboutDropdown) {
 
     aboutDropdown.classList.remove("active");
 });
-
-    aboutDropdown.classList.remove("active");
-});
-
-}
+};
