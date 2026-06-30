@@ -4520,8 +4520,8 @@ header {
     }
 
     .dropdown > a {
-        flex: 1;
-        width: 100%;
+        display: block;
+        width: calc(100% - 40px);
         padding: 1rem 0;
     }
 
@@ -4542,11 +4542,15 @@ header {
         width: 40px;
         height: 40px;
 
+        transform: translateY(-50%);
         flex-shrink: 0;
         
         cursor: pointer;
+        pointer-events: auto;
 
         font-size: 1rem;
+
+        z-index: 3000;
     }
 
     .dropdown-menu {
