@@ -4460,7 +4460,7 @@ header {
         right: 0;
 
         width: 290px;
-        height: 100vh;
+        height: 100dvh;
 
         padding: 2rem;
 
@@ -4516,18 +4516,20 @@ header {
     }
 
     .dropdown {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        position: relative;
     }
 
     .dropdown > a {
         flex: 1;
+        width: 100%;
         padding: 1rem 0;
     }
 
     .dropdown-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
         background: none;
         border: none;
 
@@ -4555,7 +4557,7 @@ header {
         right: 0;
 
         width: 290px;
-        height: 100vh;
+        height: 100dvh;
 
         background: #050505;
 
@@ -4577,7 +4579,7 @@ header {
     }
 
     .dropdown.active .dropdown-menu {
-        transform: translate(0);
+        transform: translateX(0);
         opacity: 1;
         visibility: visible;
     }
@@ -4592,7 +4594,7 @@ header {
     .dropdown-back-btn {
         display: flex;
         align-items: center;
-        gap: 6rem;
+        gap: .8rem;
 
         width: 100%;
 
