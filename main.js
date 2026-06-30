@@ -42,8 +42,13 @@ if (aboutToggle && aboutBack && aboutDropdown) {
         aboutDropdown.classList.add("active");
     });
 
-    aboutBack.addEventListener("click", () => {
-        aboutDropdown.classList.remove("active");
-    });
+    aboutBack.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    alert("BACK");
+
+    aboutDropdown.classList.remove("active");
+});
 
 }
