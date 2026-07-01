@@ -4573,11 +4573,11 @@ header {
         width: 290px;
         height:100vh;
 
-        background:#050505;
+        background: #050505;
 
         list-style:none;
 
-        padding:2rem;
+        padding: 2rem;
 
         display:flex;
         flex-direction:column;
@@ -4589,7 +4589,7 @@ header {
         opacity:0;
         visibility:hidden;
 
-        z-index:1100;
+        z-index: 1100;
     }
 
     .dropdown.active .dropdown-menu{
@@ -4620,7 +4620,7 @@ header {
         font-size:1rem;
 
         cursor:pointer;
-        
+
         margin-bottom:1.5rem;
 
     }

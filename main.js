@@ -41,6 +41,7 @@ if (openMenu && closeMenu && navMenu) {
 
 if (aboutToggle && aboutBack && aboutDropdown) {
 
+    // Abrir submenú
     aboutToggle.addEventListener("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -48,6 +49,7 @@ if (aboutToggle && aboutBack && aboutDropdown) {
         aboutDropdown.classList.add("active");
     });
 
+    // Volver atrás
     aboutBack.addEventListener("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
