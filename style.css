@@ -327,10 +327,14 @@ header {
     background: rgba(255, 255, 255, 0.03);
 }
 
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0px);
+@media (hover: hover) and (pointer: fine) {
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
 }
 
 #menu-toggle {
